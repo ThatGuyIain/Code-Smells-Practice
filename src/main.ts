@@ -3,18 +3,20 @@
 let counter = 0;
 
 // These constants are for button IDs and heading text
-const a = "increment", b = "counter", h = "CMPM 121 Project";
-const buttonIncrement = document.getElementById(a);
+const incrementID = "increment",
+  counterID = "counter",
+  headerID = "CMPM 121 Project";
+const buttonIncrement = document.getElementById(incrementID);
 const buttonDecrement = document.getElementById("dec");
 const buttonReset = document.getElementById("reset");
-const counterElement = document.getElementById(b);
+const counterElement = document.getElementById(counterID);
 
 function startSetup() {
   // Create the HTML for the counter
   document.body.innerHTML = `
-    <h1>${h}</h1>
-    <p>Counter: <span id="${b}">0</span></p>
-    <button id="${a}">Click Me!</button>
+    <h1>${headerID}</h1>
+    <p>Counter: <span id="${counterID}">0</span></p>
+    <button id="${incrementID}">Click Me!</button>
     <button id="dec">Decrement</button>
     <button id="reset">Reset</button>
   `;
